@@ -26,10 +26,37 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body {
+    font-family: var(--ff-body);
+    font-size: 14px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 1rem;
+}
+header img {
+    width: 65%;
+}
+header button {
+    border: 1px solid var(--prim-pink);
+    border-radius: 25px;
+    box-shadow: 0 0 5px;
+    color: var(--prim-pink);
+    background: white;
+    padding: 0.5rem;
+    width: 100px;
+}
+main {
+    margin: 1rem;
+}
 /* -------------------- 
     Specific Styles
 ---------------------*/
+.landing-section {
+    text-align: center;
+}
 
 /* -------------------- 
     BG Image Styles
