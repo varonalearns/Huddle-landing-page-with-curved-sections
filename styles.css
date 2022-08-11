@@ -19,7 +19,7 @@
 }
 
 /* -------------------- 
-    Just Element Styles
+    Default Element Styles
 ---------------------*/
 *, ::before, ::after {
     margin: 0;
@@ -122,9 +122,6 @@ address img {
 }
 
 /* Benefits Section */
-.benefits-section {
-
-}
 .benefits-section h3 {
     margin-bottom: 1.5rem;
 }
@@ -274,7 +271,7 @@ address img {
     background-size: cover;
     position: absolute;
     bottom: -100px;
-    left: 2px;
+    left: 0px;
 }
 .bg-footer {
     height: 101px;
@@ -282,9 +279,45 @@ address img {
     background-image: url("images/bg-footer-top-mobile.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     position: absolute;
     top: -76px;
     left: 0;
+}
+/*----------------------------------------------------------------------------
+    Lg Mobile Design
+------------------------------------------------------------------------------*/
+@media screen and (min-width: 400px) {
+    /* -------------------- 
+        Section Styles
+    ---------------------*/
+    /* Stats Section */
+    .stats-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Benefits Section */
+    .fc-section {
+        margin: 13rem 1rem 20rem 1rem;
+    }
+
+    /* -------------------- 
+        BG Image Styles
+    ---------------------*/
+    .bg-section-top-1 {
+        height: 152px;
+        top: -151px;
+    }
+    .bg-section-top-2 {
+        height: 152px;
+        top: -152px;
+    }
+    .bg-section-bottom-2 {
+        height: 171px;
+        bottom: -170px;
+    }
 }
 
 /*----------------------------------------------------------------------------
@@ -292,8 +325,66 @@ address img {
 ------------------------------------------------------------------------------*/
 @media screen and (min-width: 700px) {
     /* -------------------- 
+        Default Element Styles
+    ---------------------*/
+    header {
+        margin: 2rem 3rem;
+    }
+    footer {
+        padding: 3rem;
+    }
+    /* -------------------- 
+        Section Styles
+    ---------------------*/
+
+    /* Landing Section */
+    .landing-section {
+        margin: 0 3rem 6rem 3rem;
+    }
+    .landing-section button {
+        width: 50%;
+    }
+
+    /* Benefits Section */
+    .gt-section {
+        padding: 4rem 3rem 3rem 3rem;
+    }
+    .fc-section {
+        margin: 13rem 3rem;
+    }
+    .yu-section {
+        padding: 0 3rem 5rem 3rem;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+        margin: 19rem 3rem 15rem 3rem;
+    }
+    .cta-section button {
+        width: 50%;
+    }
+    /* Business Section */
+    .logo-n-txt div {
+        width: 45%;
+    }
+    .social-media a {
+        width: 5%;
+    }
+    /* -------------------- 
         BG Image Styles
     ---------------------*/
+    .bg-section-top-1 {
+        height: 200px;
+        top: -200px;
+    }
+    .bg-section-top-2 {
+        height: 200px;
+        top: -200px;
+    }
+    .bg-section-bottom-2 {
+        height: 200px;
+        bottom: -200px;
+    }
 }
 
 /*----------------------------------------------------------------------------
