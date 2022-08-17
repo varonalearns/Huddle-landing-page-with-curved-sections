@@ -413,10 +413,20 @@ address img {
     Small Desktop Design
 ------------------------------------------------------------------------------*/
 @media screen and (min-width: 900px) {
-    /*--------------------- 
+    /* -------------------- 
         General Styles
     ---------------------*/
-
+    header {
+        margin: 2rem 3rem;
+    }
+    header button:hover {
+        cursor: pointer;
+        border: 1px solid var(--prim-l-pink);
+        color: var(--prim-l-pink);
+    }
+    footer {
+        padding: 5rem;
+    }
     /*--------------------- 
         Specific Styles
     ---------------------*/
@@ -427,6 +437,11 @@ address img {
     }
     .illustration {
         margin-bottom: 0;
+    }
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+
     }
 
     /* Landing Section */
@@ -440,7 +455,14 @@ address img {
         font-size: 20px;
     }
     .landing-section button {
-        width: 40%;
+        width: 45%;
+        font-size: 20px;
+        padding: 1.25rem;
+        border-radius: 50px;
+    }
+    .landing-section button:hover {
+        cursor: pointer;
+        background-color: var(--prim-l-pink);
     }
 
     /* Stats Section */
@@ -461,6 +483,68 @@ address img {
         text-align: left;
         margin-right: 2rem;
     }
+    .fc-section {
+        margin-bottom: 15rem;
+    }
+    .fc-section .content-container {
+        flex-direction: row;
+    }
+    .fc-section-txt {
+        text-align: left;
+        margin-left: 2rem;
+    }
+    .yu-section .content-container {
+        padding-top: 5rem;
+    }
+    .yu-section-txt {
+        text-align: left;
+        margin-right: 2rem;
+    }
+
+    /* CTA Section */
+    .cta-section {
+        margin: 15rem 3rem;
+    }
+    .cta-section h2 {
+        font-size: 40px;
+    }
+    .cta-section button {
+        width: 45%;
+        font-size: 20px;
+        padding: 1.25rem;
+        border-radius: 50px;
+    }
+    .cta-section button:hover {
+        cursor: pointer;
+        background-color: var(--prim-l-pink);
+    }
+
+    /* Newsletter Section */
+    .newsletter-section h3 {
+        font-size: 24px;
+    }
+    .email-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .email-container input {
+        margin-bottom: 0;
+        margin-right: 2rem;
+    }
+    .email-container button {
+        margin: 0;
+    }
+    .email-container button:hover {
+        cursor: pointer;
+        background-color: var(--prim-l-pink);
+    }
+    /* Business Section */
+    .business-section {
+        margin-right: 4rem;
+    }
+    .social-media a {
+        width: 10%;
+    }
 
     /* -------------------- 
         BG Image Styles
@@ -473,15 +557,26 @@ address img {
     }
     .bg-section-bottom-1 {
         background-image: url("images/bg-section-bottom-desktop-1.svg");
+        height: 101px;
+        bottom: -100px;
+        left: 0px;
     }
     .bg-section-top-2 {
         background-image: url("images/bg-section-top-desktop-2.svg");
+        height: 103px;
+        top: -103px;
+        left: 0;
     }
     .bg-section-bottom-2 {
         background-image: url("images/bg-section-bottom-desktop-2.svg");
+        height: 101px;
+        bottom: -100px;
+        left: 0px;
     }
     .bg-footer {
         background-image: url("images/bg-footer-top-desktop.svg");
+        height: 100px;
+        top: -98px;
     }
 }
 /*----------------------------------------------------------------------------
